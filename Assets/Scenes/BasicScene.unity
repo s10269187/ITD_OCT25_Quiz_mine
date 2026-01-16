@@ -394,7 +394,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &326476844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -997,6 +997,32 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 534862803317299201, guid: 9d62963d9bd084ca5a083df700c9ee70, type: 3}
   m_PrefabInstance: {fileID: 8287417088323220816}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1449626488 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3989616726525955937, guid: 9d62963d9bd084ca5a083df700c9ee70, type: 3}
+  m_PrefabInstance: {fileID: 8287417088323220816}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1449626490
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449626488}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2092139007
 GameObject:
   m_ObjectHideFlags: 0
@@ -1007,6 +1033,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2092139010}
   - component: {fileID: 2092139009}
+  - component: {fileID: 2092139011}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1044,6 +1071,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2092139011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092139007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab68ce6587aab0146b8dabefbd806791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_ClickSpeed: 0.3
+  m_MoveDeadzone: 0.6
+  m_RepeatDelay: 0.5
+  m_RepeatRate: 0.1
+  m_TrackedDeviceDragThresholdMultiplier: 2
+  m_TrackedScrollDeltaMultiplier: 5
+  m_BypassUIToolkitEvents: 0
+  m_ActiveInputMode: 0
+  m_EnableXRInput: 1
+  m_EnableMouseInput: 1
+  m_EnableTouchInput: 1
+  m_EnableGamepadInput: 1
+  m_EnableJoystickInput: 1
+  m_PointAction: {fileID: 0}
+  m_LeftClickAction: {fileID: 0}
+  m_MiddleClickAction: {fileID: 0}
+  m_RightClickAction: {fileID: 0}
+  m_ScrollWheelAction: {fileID: 0}
+  m_NavigateAction: {fileID: 0}
+  m_SubmitAction: {fileID: 0}
+  m_CancelAction: {fileID: 0}
+  m_EnableBuiltinActionsAsFallback: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
 --- !u!1001 &8287417088323220816
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1108,25 +1174,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3092428843055598515, guid: 9d62963d9bd084ca5a083df700c9ee70, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6717937879674294374, guid: 9d62963d9bd084ca5a083df700c9ee70, type: 3}
       propertyPath: m_Axis.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6717937879674294374, guid: 9d62963d9bd084ca5a083df700c9ee70, type: 3}
       propertyPath: m_Axis.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6717937879674294374, guid: 9d62963d9bd084ca5a083df700c9ee70, type: 3}
       propertyPath: m_Anchor.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6717937879674294374, guid: 9d62963d9bd084ca5a083df700c9ee70, type: 3}
       propertyPath: m_Anchor.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7866069409560254270, guid: 9d62963d9bd084ca5a083df700c9ee70, type: 3}
       propertyPath: m_InteractionLayers.m_Bits
-      value: 2147483648
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7866069409560254270, guid: 9d62963d9bd084ca5a083df700c9ee70, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
@@ -1164,6 +1234,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3989616726525955937, guid: 9d62963d9bd084ca5a083df700c9ee70, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1449626490}
     - targetCorrespondingSourceObject: {fileID: 2314979092836302859, guid: 9d62963d9bd084ca5a083df700c9ee70, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8287417088323220822}
